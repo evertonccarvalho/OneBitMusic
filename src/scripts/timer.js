@@ -37,5 +37,5 @@ function formatTime(time) {
 }
 
 // Exemplo de uso
-var targetDate = "2023-07-09T20:00:00";
+var targetDate = "2023-07-10T23:59:00";
 countdown(targetDate);
