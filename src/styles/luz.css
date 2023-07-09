@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  position: absolute;
+}
+
+.lampadas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lamp,
+.duplicate {
+  position: relative;
+  width: 15vh;
+  height: 300vh;
+  background-image: radial-gradient(
+    ellipse,
+    rgba(82, 116, 168, 0.5),
+    rgba(82, 116, 168, 0.2) 25%,
+    rgba(82, 116, 168, 0) 50%
+  );
+
+  bottom: 0;
+}
+
+.lamp {
+  left: -300px;
+}
+
+.duplicate {
+  right: -300px;
+}
+
+.spotlight_swivel {
+  animation: rotate_spotlight 8s ease-in-out alternate infinite;
+}
+
+.spotlight {
+  opacity: 0.5;
+  transform: scale(1.5, 3);
+  position: absolute;
+
+  left: calc(20% - 100vh);
+}
+
+.spotlight::after {
+  content: "";
+  position: absolute;
+  bottom: 100vh;
+  background-image: radial-gradient(
+    ellipse closest-corner at 75% 75%,
+    rgba(55, 89, 138, 0.2),
+    rgba(55, 89, 138, 0)
+  );
+  border-radius: 100%;
+  width: 100vh;
+  height: 100vh;
+  clip: rect(50vh, 100vh, 100vh, 50vh);
+  transform: rotate(45deg);
+}
+
+.spotlight_swivel2 {
+  animation: rotate_spotlight2 8s ease-in-out alternate infinite;
+}
+
+.spotlight2::after {
+  content: "";
+  position: absolute;
+  top: -50vh;
+  background-image: radial-gradient(
+    ellipse closest-corner at 75% 75%,
+    rgba(55, 89, 138, 0.2),
+    rgba(55, 89, 138, 0)
+  );
+  border-radius: 100%;
+  width: 100vh;
+  height: 100vh;
+  clip: rect(50vh, 100vh, 100vh, 50vh);
+  transform: rotate(45deg);
+}
+
+@keyframes rotate_spotlight {
+  0% {
+    transform: rotate(0deg) scaleY(1) translateY(0);
+  }
+  25% {
+    transform: rotate(-15deg) scaleY(1.1) translateY(-3vh);
+  }
+  50% {
+    transform: rotate(45deg) scaleY(1) translateY(0);
+  }
+  75% {
+    transform: rotate(15deg) scaleY(1.1) translateY(-3vh);
+  }
+}
+
+@keyframes rotate_spotlight2 {
+  0% {
+    transform: rotate(0deg) scaleY(1) translateY(0);
+  }
+  25% {
+    transform: rotate(15deg) scaleY(1.1) translateY(-3vh);
+  }
+  50% {
+    transform: rotate(-45deg) scaleY(1) translateY(0);
+  }
+  75% {
+    transform: rotate(-15deg) scaleY(1.1) translateY(-3vh);
+  }
+}

@@ -1,0 +1,164 @@
+#EventShedule .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 10rem var(--maxContainerWidth) 0;
+  background: var(--grad-blue);
+}
+#EventShedule h2 {
+  margin-bottom: 1.25rem;
+}
+
+.DiasContainer {
+  display: flex;
+  grid-template-columns: repeat(3, (1fr));
+  gap: 30px;
+  justify-content: center;
+}
+.dias {
+  border-bottom: 4px solid var(--general-dark);
+}
+.dias {
+  color: var(--generalLight);
+  cursor: pointer;
+  padding-bottom: 1.25rem;
+  position: relative;
+  width: 370px;
+}
+.dias.deactive {
+  opacity: 50%;
+}
+
+.dias h5 {
+  color: var(--general-dark, #ffffff);
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/*tabela*/
+
+td {
+  color: var(--general-light, #f9f9f9);
+  font-size: 16px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.schedule {
+  border-radius: 1.5rem;
+  overflow: auto;
+  border: 1px solid var(--general-light);
+}
+
+.schedule tr td {
+  /* display: flex; */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+tbody .lista {
+  border-bottom: 2px solid var(--general-light);
+  border-radius: 1.5rem;
+}
+
+thead {
+  background-color: #22222223;
+}
+thead,
+.lista {
+  gap: 1.875rem;
+  padding: 2.5rem;
+}
+
+thead,
+.head {
+  position: relative;
+  color: var(--general-light);
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.375rem;
+}
+
+.ConteudoArtistaData {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.Artistas {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 2rem;
+  flex-direction: column;
+}
+.artista {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.artista img {
+  max-width: 3.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.artista p {
+  font-weight: 400;
+  display: inline-flex;
+  gap: 0.5rem;
+}
+.artista p span {
+  font-weight: 700;
+  opacity: 0.5;
+}
+.schedule .data {
+  align-items: initial;
+  font-weight: 400;
+}
+
+.state {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.state .live {
+  color: var(--general-red);
+}
+thead,
+.lista,
+.head {
+  display: grid;
+  grid-template-columns: 14.375rem 23.125rem 16.9rem 6.62rem;
+}
+
+@media (max-width: 1200px) {
+  thead,
+  .lista,
+  .head {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .schedule tr td {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .evento {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  thead,
+  .lista,
+  .head {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .evento {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}

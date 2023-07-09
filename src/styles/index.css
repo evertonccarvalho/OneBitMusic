@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --general-red: #f64348;
+  --general-dark: #222;
+  --general-light: #f9f9f9;
+  --general-gray: #5c5c5c;
+  --maxContainerWidth: max(calc((100% - 73.125rem) / 2), 1rem);
+  --grad-blue: linear-gradient(
+    180deg,
+    rgba(56, 29, 219, 0.05) 0%,
+    rgba(56, 29, 219, 0) 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  /* position: relative;
+  width: 100%vw;
+  min-height: 100vh; */
+  /* background-color: rgb(13, 13, 14); */
+  background-color: var(--general-gray);
+  overflow-x: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 10rem var(--maxContainerWidth) 0;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+.textH2 {
+  /* /H2 */
+  font-size: 34px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.textH3 {
+  color: var(--general-light);
+
+  /* /H3 */
+  font-size: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 38px;
+}
+.textH3S {
+  color: var(--general-dark);
+
+  /* /H3 */
+  font-size: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 38px;
+}
+.textH5 {
+  color: var(--general-light);
+
+  /* /Main/Regular */
+  font-size: 16px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  gap: 5rem;
+}
+.buttonPrimary {
+  /* width: 11rem; */
+
+  display: flex;
+  padding: 1.125rem 2.125rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--general-light);
+  color: var(--general-dark);
+  text-decoration: none;
+
+  /* /H5 */
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 0;
+}
+
+.buttonPrimary:hover {
+  color: var(--general-red);
+  fill: var(--general-red);
+
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.2s;
+}
+
+.btn {
+  /* margin-left: 3.125rem; */
+  display: inline-flex;
+  align-items: center;
+  padding: 18px 34px;
+  align-items: center;
+  border-radius: 8px;
+
+  background: var(--general-light);
+  color: var(--general-dark);
+  border: 0;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.btn:hover {
+  color: var(--general-red);
+  fill: var(--general-red);
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.2s;
+}
+.buttons button {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 1.125rem 2.125rem;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  background: var(--general-red);
+  color: var(--general-light);
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 0;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+.buttons button:hover {
+  color: var(--general-dark);
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.2s;
+}
+.video-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  color: var(--general-light);
+
+  /* /H4 */
+  font-size: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+img:hover {
+  color: var(--general-red);
+  fill: var(--general-red);
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.relatos-card:hover {
+  color: var(--general-red);
+  fill: var(--general-red);
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 1s;
+}
+.Gallery-card:hover {
+  color: var(--general-red);
+  fill: var(--general-red);
+  transform: scale(1.1);
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+  transition: 1s;
+}
+
+.prev:hover {
+  color: var(--general-red);
+  fill: var(--general-red);
+  transform: scale(1.5);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 1s;
+}
+
+.next:hover {
+  color: var(--general-red);
+  fill: var(--general-red);
+  transform: scale(1.5);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 1s;
+}
+svg:hover {
+  color: var(--general-red);
+  fill: var(--general-red);
+  transform: scale(1.5);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 1s;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-top: 5rem;
+  }
+}

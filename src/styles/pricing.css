@@ -1,0 +1,118 @@
+.priceContainer {
+  padding: 1rem var(--maxContainerWidth);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+.cards {
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(15.625rem, 23.125rem));
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9375rem;
+  justify-content: center;
+  display: grid;
+  overflow: hidden;
+  margin: auto;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+}
+.cardContent h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 38px;
+  text-align: center;
+  color: var(--general-dark, #222);
+}
+
+.cardContent h1 {
+  font-size: 3.75rem;
+  text-transform: capitalize;
+  color: var(--general-dark, #222);
+  text-align: center;
+  /* H1 */
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.cardContent ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  background-color: aqua;
+  text-decoration: none;
+  align-items: center;
+}
+li {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--general-dark, #222);
+
+  /* /Main/Regular */
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.card .buttonPrimary {
+  border: 1px solid #222;
+}
+
+.cards .card {
+  width: 23.125rem;
+  height: 100%;
+  min-height: 25.25rem;
+  display: inline-block;
+  margin-right: 20px;
+  border-top: 4px solid var(--general-dark);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.125rem;
+  padding: 1.625rem max(calc((100% - 19.375rem) / 2), 1.875rem);
+  gap: 1.875rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+.card.padrao .buttonPrimary {
+  border: 1px solid #222;
+  background-color: #222;
+  color: var(--general-light);
+}
+.card.vip .buttonPrimary {
+  border: 1px solid var(--general-red);
+}
+.card.vip {
+  border-top: 4px solid var(--general-red);
+}
+
+.vip .buttonPrimary {
+  color: red;
+  border: 1px solid var(--general-red);
+}
+.vip li {
+  color: var(--general-red);
+}
+.vip h1 {
+  color: var(--general-red);
+}
+.vip h3 {
+  color: var(--general-red);
+}
+
+@media (min-height: 450px) and (max-width: 800px) {
+  .cards {
+    max-width: 400px;
+    padding-left: 20px;
+  }
+}

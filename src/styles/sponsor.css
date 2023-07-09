@@ -1,0 +1,56 @@
+.sponsorContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem var(--maxContainerWidth) 8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4.3125rem;
+}
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+.logos .row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.sponsorContainer .buttonPrimary {
+  justify-content: center;
+}
+/**/
+
+@media (max-width: 600px) {
+  .sponsorContainer,
+  .logos {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .logos .row {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 2fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .logos .row {
+    display: flex;
+    padding: auto;
+    gap: 1.5rem;
+  }
+}
