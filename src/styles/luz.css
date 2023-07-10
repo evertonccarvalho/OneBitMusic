@@ -1,8 +1,7 @@
-* {
+#luz {
   box-sizing: border-box;
-}
-.main {
-  position: absolute;
+  width: 100%;
+  object-fit: contain;
 }
 
 .lampadas {
@@ -10,35 +9,36 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: flex-start;
+  top: -350vh;
 }
 
 .lamp,
 .duplicate {
-  position: relative;
-  width: 15vh;
-  height: 300vh;
+  position: absolute;
+  width: 15vw;
+  height: 500vh;
+
   background-image: radial-gradient(
     ellipse,
     rgba(82, 116, 168, 0.5),
     rgba(82, 116, 168, 0.2) 25%,
     rgba(82, 116, 168, 0) 50%
   );
-
-  bottom: 0;
 }
 
 .lamp {
-  left: -300px;
+  left: 500px;
 }
 
 .duplicate {
-  right: -300px;
+  right: 500px;
 }
 
 .spotlight_swivel {
-  animation: rotate_spotlight 8s ease-in-out alternate infinite;
+  animation: rotate_spotlight 10s ease-in-out alternate infinite;
 }
 
 .spotlight {
@@ -52,27 +52,26 @@
 .spotlight::after {
   content: "";
   position: absolute;
-  bottom: 100vh;
+  bottom: 0;
   background-image: radial-gradient(
     ellipse closest-corner at 75% 75%,
     rgba(55, 89, 138, 0.2),
     rgba(55, 89, 138, 0)
   );
   border-radius: 100%;
-  width: 100vh;
-  height: 100vh;
+
   clip: rect(50vh, 100vh, 100vh, 50vh);
   transform: rotate(45deg);
 }
 
 .spotlight_swivel2 {
-  animation: rotate_spotlight2 8s ease-in-out alternate infinite;
+  animation: rotate_spotlight2 10s ease-in-out alternate infinite;
 }
 
 .spotlight2::after {
   content: "";
   position: absolute;
-  top: -50vh;
+
   background-image: radial-gradient(
     ellipse closest-corner at 75% 75%,
     rgba(55, 89, 138, 0.2),

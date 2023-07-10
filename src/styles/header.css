@@ -11,13 +11,11 @@ header {
   /* backdrop-filter: blur(5px); */
 }
 .scrolled {
-  transition: background-color 1s ease-in-out; /* Adicione uma transição suave para a mudança de cor */
+  transition: background-color 1s ease-in-out;
 }
-
 .scrolled {
-  background-color: var(
-    --general-dark
-  ); /* Defina a cor que você deseja quando ocorrer o scroll */
+  background: rgba(0, 0, 0, 0.945);
+  /* Defina a cor que você deseja quando ocorrer o scroll */
 }
 
 .logocontent {
