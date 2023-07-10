@@ -14,7 +14,7 @@ header {
   transition: background-color 1s ease-in-out;
 }
 .scrolled {
-  background: rgba(0, 0, 0, 0.945);
+  background: var(--general-dark);
   /* Defina a cor que você deseja quando ocorrer o scroll */
 }
 
