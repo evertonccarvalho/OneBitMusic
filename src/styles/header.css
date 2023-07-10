@@ -10,6 +10,16 @@ header {
   z-index: 10000;
   /* backdrop-filter: blur(5px); */
 }
+.scrolled {
+  transition: background-color 1s ease-in-out; /* Adicione uma transição suave para a mudança de cor */
+}
+
+.scrolled {
+  background-color: var(
+    --general-dark
+  ); /* Defina a cor que você deseja quando ocorrer o scroll */
+}
+
 .logocontent {
   display: flex;
   align-items: center;

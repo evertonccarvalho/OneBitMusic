@@ -1,6 +1,6 @@
 /* Artistas */
 
-#Singers {
+#Artistas {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -93,17 +93,9 @@
 /* artist end*/
 
 @media (max-width: 1024px) {
-  #Singers .container {
-    display: flex;
-  }
   .singer {
-    display: flex;
-    flex-direction: column-reverse;
-
+    flex-direction: flex;
     gap: 0;
-  }
-  .sobre {
-    gap: 1rem;
   }
   .desc-container {
     width: 85%;
@@ -138,6 +130,12 @@
     gap: 1rem;
   }
 }
+@media (max-width: 900px) {
+  .singer {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
 @media (max-width: 600px) {
   .textH2 {
     font-size: 25px;
@@ -156,20 +154,22 @@
   }
   .images .img3,
   .img2 {
-    width: 9.187rem;
-    height: 11.3309rem;
+    width: 148px;
+    height: 165px;
   }
 }
 
 @media (max-width: 375px) {
   .images .img1,
   .img4 {
-    width: 7.93rem;
-    height: 5.7876rem;
+    width: 148px;
+    height: 108px;
+    margin: 2px;
   }
   .images .img3,
   .img2 {
-    width: 6.43;
-    height: 7.93rem;
+    margin: 2px;
+    width: 148px;
+    height: 165px;
   }
 }

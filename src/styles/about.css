@@ -1,8 +1,6 @@
 /* About Section*/
 
-#AboutMusic {
-  height: 60rem;
-
+#Sobre {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -10,32 +8,23 @@
 }
 
 .sobre {
-  gap: 4.375rem;
   display: flex;
-  width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 4.375rem;
 }
 
-.eventimages {
-  width: 33.125rem;
-  height: 34.375rem;
-
+.imagesEvent {
+  width: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   column-gap: 4.375rem;
   position: relative;
-}
-.eventimages img {
-  border-radius: 1.5rem;
 }
 
 .ImgFront {
   position: absolute;
-  width: 28.7rem;
-  height: 30rem;
   margin-left: 70px;
   margin-top: 70px;
   z-index: 1;
@@ -43,42 +32,41 @@
 .ImgBack {
   border-radius: 1.5rem;
   opacity: 0.30000001192092896;
-  /* background: url(../img/eventos/Img\(1\).png), lightgray 50% / cover no-repeat; */
   margin-left: -70px;
   margin-top: -70px;
-  width: 28.7rem;
-  height: 30rem;
-}
-
-.aboutcontent {
-  display: flex;
-  width: 35.625rem;
-  height: 320px;
-  flex-direction: column;
-  justify-content: center; /* Alinha os itens verticalmente ao centro */
-  gap: 5rem;
-
-  color: #f9f9f9;
 }
 
 @media (max-width: 1200px) {
   .sobre {
-    display: flex;
     flex-direction: column;
   }
-  .aboutcontent {
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: blue;
+}
+/* 
+///////////// */
+
+@media (max-width: 700px) {
+  #Sobre {
+    display: inline;
   }
-  .text-content {
-    text-align: center;
-    align-items: center;
+  .sobre {
+    gap: 2rem;
   }
-  .aboutcontent h2 {
-    text-align: center;
-    justify-content: center;
+
+  .sobre.desc-container {
+    height: 85%;
+  }
+  .ImgFront {
+    width: 300px;
+
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .ImgBack {
+    width: 300px;
+
+    margin-left: -20px;
+    margin-top: -20px;
   }
 }
+/* 
+///////////// */
