@@ -139,26 +139,9 @@
   outline: none;
 }
 
-@media (max-height: 400px) {
-  .header {
-    margin: 40px 0 0 0;
-  }
-  .name {
-    font-size: 12px;
-  }
-  .title {
-    font-size: 10px;
-  }
-  .quote-container {
-    padding: 5px 20px 20px 20px;
-  }
-  .quote-icon {
-    width: 75px;
-    height: 75px;
-  }
-  .avatar {
-    width: 100px;
-    height: 100px;
-    transform: translate(-50px, -50px);
+@media (max-width: 420px) {
+  .relatos-card {
+    width: 350px;
+    height: 600px;
   }
 }

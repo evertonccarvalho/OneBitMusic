@@ -187,20 +187,12 @@
   right: 100%;
 }
 
-@media (min-width: 450px) {
-  .media {
-    .CarrosselControl {
-      top: 11.5625rem;
-    }
-    .instashot {
-      padding: 0;
-    }
-  }
-}
-
 @media (min-height: 450px) and (max-width: 800px) {
   .cards {
     max-width: 400px;
     padding-left: 20px;
+  }
+  .Gallery-container .textH2 {
+    font-size: 18px;
   }
 }

@@ -111,8 +111,14 @@ li {
 }
 
 @media (min-height: 450px) and (max-width: 800px) {
+  .cards .card {
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+  }
   .cards {
-    max-width: 400px;
-    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
   }
 }

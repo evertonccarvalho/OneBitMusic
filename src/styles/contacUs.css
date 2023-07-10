@@ -1,27 +1,14 @@
 #ContaUS {
   display: flex;
-  flex-wrap: wrap;
+
   column-gap: 8.125rem;
   position: relative;
 }
-
-.form {
-  gap: 40px;
-  max-width: 35.625rem;
-  flex: 1;
+.contactsContainer {
   display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+  flex-direction: initial;
+  gap: 8.5rem;
 }
-.form .textH3 {
-  color: var(--general-light);
-  padding-top: 20%;
-}
-.forms {
-  align-items: center;
-  gap: 1.875rem;
-}
-
 .left {
   width: 52.8125rem;
   height: 41.375rem;
@@ -48,23 +35,16 @@
   bottom: -5px;
 }
 
-.left h2 {
-  display: flex;
-  width: 585px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  padding-left: 80px;
-  padding-top: 120px;
-}
 .details {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-
   padding-left: 80px;
   padding-top: 128px;
+}
+.details .textH2 {
+  padding-bottom: 126px;
 }
 .contacts {
   display: flex;
@@ -72,10 +52,17 @@
   gap: 8px;
   text-decoration: none;
 }
+
 .contacts h5 {
   font-weight: 700;
 }
-
+/*Formulario*/
+.form {
+  display: grid;
+  grid-template-columns: repeat(1, (1fr));
+  gap: 30px;
+  justify-content: center;
+}
 .SmallBold {
   display: flex;
   flex-direction: column;
@@ -87,6 +74,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
+}
+.form .textH3 {
+  color: var(--general-light);
+  padding-top: 20%;
 }
 
 .inputField {
@@ -130,57 +121,53 @@
 .inputArea input {
   width: 100%;
 }
+/* FOrmulario*/
 
 @media (max-width: 1400px) {
+  #ContaUS {
+    flex-direction: column;
+  }
+  .contactsContainer {
+    justify-content: center;
+  }
+  .details {
+    align-items: center;
+  }
+  .details .textH2 {
+    padding-bottom: 0;
+  }
   .left {
     gap: 1rem;
     padding: 0;
     width: 100%;
     display: flex;
-
     align-items: center;
     text-align: center;
   }
   .details {
     padding-top: 0;
-    flex-direction: row;
+    padding-left: 0;
+    flex-direction: column;
   }
   .left h2 {
     padding-top: 2rem;
   }
 
   .form {
+    position: absolute;
+    bottom: 50px;
     width: 100%;
-    align-items: center;
-    position: absolute;
-    padding: 3rem 50%;
-    align-items: center;
-    bottom: 0;
-    position: absolute;
+    justify-content: space-around;
   }
-  .form .textH3 {
-    width: 17rem;
+  .forms {
+    width: 100%;
   }
-}
-@media (max-width: 400px) {
-  .left {
-    gap: 1rem;
-    padding: 0;
+  .inputArea {
+    flex: 1; /* Adicione esta linha */
+    width: 100%;
     display: flex;
-    width: 100%;
-  }
-  .details {
-    padding-top: 0;
-    flex-direction: row;
-  }
-  .left h2 {
-    padding-top: 2rem;
-  }
-
-  .form {
-    position: absolute;
-    padding: 5rem 2rem;
+    height: 82px;
+    flex-direction: column;
     align-items: center;
-    margin: 2rem;
   }
 }
