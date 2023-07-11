@@ -35,61 +35,6 @@
   position: relative;
 }
 
-.images {
-  width: 100;
-  height: 100%;
-  flex-shrink: 0;
-  max-width: 100%;
-  height: auto;
-}
-.imagesback {
-  width: 100;
-  height: 100%;
-  flex-shrink: 0;
-  max-width: 100%;
-  flex-shrink: 0;
-  z-index: -10;
-}
-
-.images .img1,
-.img4 {
-  width: 23.125rem;
-  height: 16.875rem;
-  margin: 5px;
-  z-index: 10;
-}
-.images .img3,
-.img2 {
-  width: 16.875rem;
-  height: 18.75rem;
-  margin: 5px;
-  z-index: 10;
-}
-
-.img1blur,
-.img4blur {
-  width: 23.125rem;
-  height: 16.875rem;
-
-  padding-left: 1rem;
-  filter: blur(40px);
-}
-.img3blur,
-.img2blur {
-  width: 16.875rem;
-  height: 18.75rem;
-
-  filter: blur(40px);
-}
-.images img {
-  border-radius: 1.5rem;
-}
-
-.images,
-.imagesback img {
-  max-width: 100%; /* Para que a imagem se ajuste proporcionalmente à div */
-  height: auto;
-}
 /* artist end*/
 
 @media (max-width: 1024px) {
@@ -111,16 +56,6 @@
     text-align: center;
     justify-content: center;
   }
-  .images .img1,
-  .img4 {
-    width: 16.187rem;
-    height: 11.812rem;
-  }
-  .images .img3,
-  .img2 {
-    width: 13.125rem;
-    height: 16.187rem;
-  }
   .singers {
     width: 100%;
     height: auto;
@@ -129,6 +64,7 @@
   .desc-container {
     gap: 1rem;
   }
+  /**/
 }
 @media (max-width: 900px) {
   .singer {
@@ -146,30 +82,5 @@
   .singers {
     width: 100%;
     height: auto;
-  }
-  .images .img1,
-  .img4 {
-    width: 11.3309rem;
-    height: 8.268rem;
-  }
-  .images .img3,
-  .img2 {
-    width: 148px;
-    height: 165px;
-  }
-}
-
-@media (max-width: 375px) {
-  .images .img1,
-  .img4 {
-    width: 148px;
-    height: 108px;
-    margin: 2px;
-  }
-  .images .img3,
-  .img2 {
-    margin: 2px;
-    width: 148px;
-    height: 165px;
   }
 }
