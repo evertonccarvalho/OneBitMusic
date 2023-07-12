@@ -14,6 +14,7 @@
 .img4 {
   position: relative;
   margin: 5px;
+  border-radius: 25px;
 }
 
 .img1::before,
@@ -28,10 +29,11 @@
   inset: 0px;
   position: absolute;
   z-index: -1;
-  filter: blur(10px);
+  filter: blur(40px);
+
   background-size: 300%;
-  border-radius: 25px;
-  animation: AnimarBorda 20s linear alternate infinite;
+  border-radius: 20px;
+  animation: AnimarBorda 25s linear alternate infinite;
 }
 
 @keyframes AnimarBorda {
