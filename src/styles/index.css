@@ -228,7 +228,6 @@ svg:hover {
 
 @media (max-width: 1200px) {
   .container {
-    /* padding-top: 5rem; */
-    padding: 0rem var(--maxContainerWidth) 0;
+    padding-top: 5rem;
   }
 }

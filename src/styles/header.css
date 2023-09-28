@@ -1,3 +1,6 @@
+.mainHeader {
+  /* background-color: red; */
+}
 header {
   position: fixed;
   top: 0;
@@ -94,7 +97,10 @@ header ul li:hover {
 
 @media (max-width: 1200px) {
   header {
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
+    padding: 1rem;
+    display: flex;
+    /* position: relative; */
   }
   header.active {
     background: rgba(0, 0, 0, 0.945);
