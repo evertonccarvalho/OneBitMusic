@@ -83,6 +83,8 @@ body {
   gap: 5rem;
 }
 .buttonPrimary {
+  /* width: 11rem; */
+
   display: flex;
   padding: 1.125rem 2.125rem;
   align-items: center;
@@ -226,6 +228,7 @@ svg:hover {
 
 @media (max-width: 1200px) {
   .container {
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
+    padding: 0rem var(--maxContainerWidth) 0;
   }
 }
