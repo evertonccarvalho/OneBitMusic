@@ -83,8 +83,6 @@ body {
   gap: 5rem;
 }
 .buttonPrimary {
-  /* width: 11rem; */
-
   display: flex;
   padding: 1.125rem 2.125rem;
   align-items: center;
